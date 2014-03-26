@@ -6,7 +6,8 @@ restify = require 'restify'
 server = restify.createServer()
 server.pre restify.pre.userAgentConnection() # Fix for curl
 server.use restify.acceptParser server.acceptable # respond correctly to accept headers
-server.use restify.fullResponse() # set CORS, eTag, other common headers
+server.use restify.fullResponse() # set common headers
+server.use restify.CORS()
 server.use restify.gzipResponse() # Compress the response yo
 
 ###
