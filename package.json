@@ -1,0 +1,31 @@
+{ "name": "cellidwat"
+, "bugs": "http://github.com/jedahan/cellidwat/issues"
+, "contributors": ["Jonathan Dahan"]
+, "licenses": [ "CC0" ]
+, "version": "0.0.1"
+, "description": "show some mcn and mnns"
+, "author": "Jonathan Dahan <jonathan@jonathan.is>"
+, "keywords": ["cell"]
+, "dependencies":
+  { "coffee-script-redux": "2.0.x"
+  , "restify": "2.6.x"
+  }
+, "devDependencies": {
+    "bower": "1.2.x"
+  }
+, "engines": {
+    "node": "0.10.x",
+    "npm":  "1.4.x"
+  }
+, "scripts":
+  { "start": "coffee server.coffee"
+  },
+"repository": {
+    "type": "git",
+    "url": "https://github.com/jedahan/cellidwat.git"
+  },
+  "scripts": {
+    "prestart": "rm public/scripts/main.js; coffee --js --source-map-file public/scripts/main.js.map < public/scripts/main.coffee > public/scripts/main.js",
+    "start": "coffee server.coffee"
+  }
+}

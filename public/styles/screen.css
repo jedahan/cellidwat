@@ -1,0 +1,25 @@
+.fillin {
+    background-color: red;
+    width: 16px;
+    height: 20px;
+    float: left;
+}
+br {
+    clear: left;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+img.icon {
+    width: 50px;
+    height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}

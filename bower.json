@@ -1,0 +1,24 @@
+{
+  "name": "cellidwat",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jedahan/cellidwat",
+  "authors": [
+    "Jonathan Dahan <jonathan@jonathan.is>"
+  ],
+  "dependencies": {
+    "zepto": "~1.1.3"
+  },
+  "description": "Sample webapp that tells you the closest mcn and mnn",
+  "main": "index.html",
+  "keywords": [
+    "weather"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components"
+  ]
+}
